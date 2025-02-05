@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width: 1990px) {
+  /* Hides the scrollbar but keeps the scrolling functionality */
+  .carousel-wrapper::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in webkit browsers */
+  }
+
+  .carousel-wrapper {
+    -ms-overflow-style: none; /* Hides the scrollbar in IE and Edge */
+    scrollbar-width: 0; /* Hides the scrollbar in Firefox */
+  }
+}
